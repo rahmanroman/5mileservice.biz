@@ -1,11 +1,104 @@
 <!doctype html>
 <html>
-<head>
+<head prefix="og: http://ogp.me/ns# business: http://ogp.me/ns/business#">
+    <meta property="og:type" content="business.business">
+    <meta property="og:url" content="http://5mileservice.biz/">
+    <meta property="og:title" content="ЕООД 5мили сървис">
+    <meta property="og:type" content="website">
+    <!--<meta property="og:image" content="">-->
+    <meta property="business:contact_data:street_address" content="ул. Московска, No 21Б, ет. 3">
+    <meta property="business:contact_data:locality" content="област София (столица), община Столична">
+    <meta property="business:contact_data:postal_code" content="1000">
+    <meta property="business:contact_data:country_name" content="България">
+
     <meta charset="utf-8">
-    <title>5mileservice.biz</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta http-equiv="cleartype" content="on">
+
+    <title>ЕООД &laquo;5мили сървис&raquo;</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400" rel="stylesheet">
+    <style type="text/css">
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background: #fff;
+            color: #212121;
+        }
+
+        h1 {
+            font-size: 1.825rem;
+            font-weight: 400;
+            line-height: 1;
+            text-align: center;
+        }
+
+        h1 small {
+            font-size: .85rem
+        }
+
+        [itemprop="address"] {
+            font-size: .75rem;
+        }
+
+        [itemprop="description"] {
+            font-size: .85rem;
+            text-align: justify;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            .content {
+                margin: 1.5rem;
+            }
+        }
+
+        @media (min-width: 601px) and (min-height: 350px) {
+            .content {
+                position: absolute;
+                width: 360px;
+                left: 50%;
+                top: 50%;
+                transform-style: preserve-3d;
+                transform: translateX(-50%) translateY(-50%);
+            }
+        }
+
+    </style>
+
 </head>
 
 <body>
-    <h1>5mileservice.biz</h1>
+
+<div itemscope itemtype="http://schema.org/Organization" class="content">
+    <h1>
+        <span itemprop="name">ЕООД &laquo;5мили сървис&raquo;</span><br>
+        <!--<small itemprop="name">5mils service</small>-->
+    </h1>
+
+    <p itemprop="description">
+        Ай Ти услуги, разработване на софтуерни продукти, продажба на хардуерни и софтуерни продукти, консултантски
+        услуги, бизнес анализи, маркетинг, мениджмънт, проучване и развитие, посредничество и търговско
+        представителство, търговия с всякакъв вид стоки и услуги, внос и износ на стоки и услуги, както и всяка друга
+        търговска дейност, незабранена от закон.
+    </p>
+
+    <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+        <div itemprop="streetAddress">
+            ул. "Московска" No 21Б, ет. 3
+        </div>
+        <div>
+            <span itemprop="addressLocality">гр. София</span>,
+            <span itemprop="addressRegion">област София (столица), община Столична</span>
+        </div>
+        <div>
+            <span itemprop="postalCode">1000</span>
+            <span itemprop="addressCountry">България</span>
+        </div>
+    </div>
+</div>
+
 </body>
 </html>
